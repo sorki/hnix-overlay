@@ -1,0 +1,5 @@
+attic/*
+dbg/*
+dist
+dist-newstyle
+result*
