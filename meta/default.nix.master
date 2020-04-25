@@ -1,0 +1,12 @@
+{ nixpkgs ? import <nixpkgs> {} }:
+let
+  hnSrc = builtins.fetchTarball https://github.com/sorki/hnix-overlay/archive/master.tar.gz;
+  hn = import hnSrc {};
+  src = hn.pkgs.nix-gitignore.gitignoreSource [] ./.;
+in
+  hn // rec {
+    my-lib =
+      hn.scope.callCabal2nix "my-lib" "${src}" {};
+
+    shell = hn.mkShell my-lib;
+  }
