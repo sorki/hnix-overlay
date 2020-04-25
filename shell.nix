@@ -1,2 +1,2 @@
-{ nixpkgs ? import ./nixpkgs.nix {}, compiler ? "default" }:
-(import ./default.nix { inherit nixpkgs compiler; }).shell
+{ nixpkgs ? import ./nixpkgs.nix {} }:
+(import ./default.nix { inherit nixpkgs; }).shell
