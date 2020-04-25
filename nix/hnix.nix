@@ -1,7 +1,7 @@
 self: super:
 let
   # https://github.com/haskell-nix/hnix
-  src = super.fetchFromGitHub {
+  srcX = super.fetchFromGitHub {
     owner = "sorki";
     repo = "hnix";
     rev = "9bcf3f119f5bf5554dcf756dd410858b9356e3ed";
@@ -9,7 +9,7 @@ let
   };
 
   # swap with src to build from this path
-  srcX = ../../hnix;
+  src = ../../hnix;
 in
 {
   haskellPackages = super.haskellPackages.override (old: {

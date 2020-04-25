@@ -1,7 +1,7 @@
 self: super:
 let
   # https://github.com/Gabriel439/nix-diff
-  src = super.fetchFromGitHub {
+  srcX = super.fetchFromGitHub {
     owner = "sorki";
     repo = "nix-diff";
     rev = "a2f8ad0706347fd88f3095982e8d48a6d5fb65ff";
@@ -9,7 +9,7 @@ let
   };
 
   # swap with src to build from this path
-  srcX = ../../nix-diff;
+  src = ../../nix-diff;
 in
 {
   haskellPackages = super.haskellPackages.override (old: {

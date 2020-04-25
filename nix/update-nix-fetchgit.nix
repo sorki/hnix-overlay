@@ -1,6 +1,6 @@
 self: super:
 let
-  src = super.fetchFromGitHub {
+  srcX = super.fetchFromGitHub {
     owner = "sorki";
     repo = "update-nix-fetchgit";
     rev = "8f4542a6d0ccab4ad25a3274ceba9c1963d0ccdd";
@@ -8,7 +8,7 @@ let
   };
 
   # swap with src to build from this path
-  srcX = ../../update-nix-fetchgit;
+  src = ../../update-nix-fetchgit;
 in
 {
   haskellPackages = super.haskellPackages.override (old: {

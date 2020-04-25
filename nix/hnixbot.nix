@@ -1,7 +1,7 @@
 self: super:
 let
   # https://github.com/sorki/hnixbot
-  src = super.fetchFromGitHub {
+  srcX = super.fetchFromGitHub {
     owner = "sorki";
     repo = "hnixbot";
     rev = "46477d50a0e34eb0ce55ad5d89308038a83a4dfb";
@@ -9,7 +9,7 @@ let
   };
 
   # swap with src to build from this path
-  srcX = ../../hnixbot;
+  src = ../../hnixbot;
 in
 {
   haskellPackages = super.haskellPackages.override (old: {
