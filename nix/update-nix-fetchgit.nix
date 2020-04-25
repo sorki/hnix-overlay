@@ -1,10 +1,10 @@
 self: super:
 let
   src = super.fetchFromGitHub {
-    owner = "expipiplus1";
+    owner = "sorki";
     repo = "update-nix-fetchgit";
-    rev = "3a606ea48ac1a761ee48e4d3c842501af4a7c66a";
-    sha256 = "0mminxh8sqqnzkscs1jpwfrk82aimy4081xigam2brbs6kj8zhpb";
+    rev = "8f4542a6d0ccab4ad25a3274ceba9c1963d0ccdd";
+    sha256 = "1vrdh7wmyvwk92b1kyanmplw07blnzpgjgc82584ng8049yk9rcw";
   };
 
   # swap with src to build from this path

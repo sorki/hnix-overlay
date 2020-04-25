@@ -2,10 +2,10 @@ self: super:
 let
   # https://github.com/Gabriel439/nix-diff
   src = super.fetchFromGitHub {
-    owner = "Gabriel439";
+    owner = "sorki";
     repo = "nix-diff";
-    rev = "4eef5c771f9ab5ab0c443544d27ae120d5484f40";
-    sha256 = "1da0sg0kgzvjvyxwf3ibipl3j4kxmklfh1g0npkhfcdlvkiz8qjg";
+    rev = "a2f8ad0706347fd88f3095982e8d48a6d5fb65ff";
+    sha256 = "13khqlsaddl5xg381davwxn37ckxhq4xp4kk8li9gdjbngh31x1p";
   };
 
   # swap with src to build from this path

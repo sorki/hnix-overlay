@@ -2,10 +2,10 @@ self: super:
 let
   # https://github.com/Gabriel439/Haskell-Nix-Derivation-Library
   src = super.fetchFromGitHub {
-    owner = "Gabriel439";
+    owner = "sorki";
     repo = "Haskell-Nix-Derivation-Library";
-    rev = "69cfd0e37f2628645785f74e63732fa3abeced57";
-    sha256 = "07rvmpv8ijqdaay9qxim2ii3j367x5qim4fzjnnn1wm9g4c0wlyf";
+    rev = "9221f9b2a9751e57b0f6f8deb61881a3b4b72cd7";
+    sha256 = "1n7j8rsymqdyvrgns9lv4rk6jngpsk5j0nk94wgcv4waqb1gn1dd";
   };
 
   # swap with src to build from this path

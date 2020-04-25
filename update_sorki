@@ -1,0 +1,12 @@
+# int(egration)
+./result/bin/update-nix-fetchgit nix/hnix.nix --rev refs/heads/int
+
+# storepath
+./result/bin/update-nix-fetchgit nix/hnix-store.nix --rev refs/heads/storepath
+
+# poly derivation
+./result/bin/update-nix-fetchgit nix/nix-derivation.nix --rev refs/heads/poly
+./result/bin/update-nix-fetchgit nix/nix-diff.nix --rev refs/heads/poly
+
+# GHC 883 fixes
+./result/bin/update-nix-fetchgit nix/update-nix-fetchgit.nix --rev refs/heads/fixes

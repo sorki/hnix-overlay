@@ -2,10 +2,10 @@ self: super:
 let
   # https://github.com/haskell-nix/hnix
   src = super.fetchFromGitHub {
-    owner = "haskell-nix";
+    owner = "sorki";
     repo = "hnix";
-    rev = "9f1519d9ca7d37b6584b8eaabde0ca47c65857cd";
-    sha256 = "05pgipvnwlb642sjiprshhqgark79h133f07na5dnbph4kqka7i6";
+    rev = "9bcf3f119f5bf5554dcf756dd410858b9356e3ed";
+    sha256 = "1k64my9lh09dcrl812ij4w81zbsmh93b8n2z8xd474gncpk9zcf0";
   };
 
   # swap with src to build from this path
