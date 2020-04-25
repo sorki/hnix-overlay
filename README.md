@@ -2,7 +2,9 @@
 
 Nix files and Haskell overlay containing Hnix packages and surrounding ecosystem.
 
-Warning: this is currently my `hnix` playground and will change very frequently.
+Warning: this is currently my `hnix` integration playground and will change very frequently,
+`master` will be kept buildable (at least with pinned `nixpkgs`) while things are not upstreamed,
+which should make this repo obsolete.
 
 ## Usage
 
@@ -39,3 +41,8 @@ nix-shell -E "with (import ./default.nix {}); mkShell scope.hnix-store-experimen
 ```
 
 You can then jump to projects repo checkout and use `cabal build/repl/run/test`.
+
+## `local` branch
+
+Check-out `local` branch to build everything from locally cloned repositories.
+Meta tooling for cloning repositories from higher level description in progress.
