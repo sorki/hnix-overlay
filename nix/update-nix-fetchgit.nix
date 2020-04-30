@@ -3,8 +3,8 @@ let
   src = super.fetchFromGitHub {
     owner = "sorki";
     repo = "update-nix-fetchgit";
-    rev = "8f4542a6d0ccab4ad25a3274ceba9c1963d0ccdd";
-    sha256 = "1vrdh7wmyvwk92b1kyanmplw07blnzpgjgc82584ng8049yk9rcw";
+    rev = "7f098f10a93e3e3b3926af31e6278011d2d1d19e";
+    sha256 = "1rk5kl4ncxqmyyx11kibry8kg1k9yfflvh4wqbljg8i0dx7hgs7g";
   };
 
   # swap with src to build from this path
