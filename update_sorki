@@ -1,11 +1,19 @@
+#!/usr/bin/env bash
+
+set -e
+
+nix-build -A update-nix-fetchgit -o updater
+
 # int(egration)
-./result/bin/update-nix-fetchgit nix/hnix.nix --rev refs/heads/int
+./updater/bin/update-nix-fetchgit nix/hnix.nix --rev refs/heads/int
 
 # storepath
-./result/bin/update-nix-fetchgit nix/hnix-store.nix --rev refs/heads/storepath
+./updater/bin/update-nix-fetchgit nix/hnix-store.nix --rev refs/heads/storepath
 
 # poly derivation
-./result/bin/update-nix-fetchgit nix/nix-diff.nix --rev refs/heads/poly
+./updater/bin/update-nix-fetchgit nix/nix-diff.nix --rev refs/heads/poly
 
-# GHC 883 fixes
-./result/bin/update-nix-fetchgit nix/update-nix-fetchgit.nix --rev refs/heads/fixes
+# GHC 883 fixes and other bits
+./updater/bin/update-nix-fetchgit nix/update-nix-fetchgit.nix --rev refs/heads/fixes
+
+./updater/bin/update-nix-fetchgit nix/update-nix-file.nix
