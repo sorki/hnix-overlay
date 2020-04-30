@@ -1,7 +1,7 @@
 self: super:
 let
   # XXX: publish this first..
-  src = super.fetchFromGitHub {
+  srcX = super.fetchFromGitHub {
     owner = "sorki";
     repo = "update-nix-file";
     rev = "c2d9316e2ad0a0eba5145fe90d028a941156f0b5";
@@ -9,7 +9,7 @@ let
   };
 
   # swap with src to build from this path
-  srcX = ../../update-nix-file;
+  src = ../../update-nix-file;
 in
 {
   haskellPackages = super.haskellPackages.override (old: {
