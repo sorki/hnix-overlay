@@ -1,15 +1,14 @@
 self: super:
 let
-  # XXX: publish this first..
-  srcX = super.fetchFromGitHub {
+  src = super.fetchFromGitHub {
     owner = "sorki";
     repo = "update-nix-file";
-    rev = "c2d9316e2ad0a0eba5145fe90d028a941156f0b5";
-    sha256 = "0blqdw51i7z0160q9mvq8ks4hn9jz4cdfg997aijvl272p005dy3";
+    rev = "233df3768217fa9ed0961726d1d3c088a28ee62a";
+    sha256 = "0kdqxq1rv6y9iz90xckwlajs1lka3hf19icdwdxkakn2x35hm6ai";
   };
 
   # swap with src to build from this path
-  src = ../../update-nix-file;
+  srcX = ../../update-nix-file;
 in
 {
   haskellPackages = super.haskellPackages.override (old: {
