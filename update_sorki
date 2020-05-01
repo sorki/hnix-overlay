@@ -16,4 +16,6 @@ nix-build -A update-nix-fetchgit -o updater
 # GHC 883 fixes and other bits
 ./updater/bin/update-nix-fetchgit nix/update-nix-fetchgit.nix --rev refs/heads/fixes
 
+# master
+./updater/bin/update-nix-fetchgit nix/nix-narinfo.nix
 ./updater/bin/update-nix-fetchgit nix/update-nix-file.nix
