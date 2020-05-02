@@ -19,3 +19,5 @@ nix-build -A update-nix-fetchgit -o updater
 # master
 ./updater/bin/update-nix-fetchgit nix/nix-narinfo.nix
 ./updater/bin/update-nix-fetchgit nix/update-nix-file.nix
+./updater/bin/update-nix-fetchgit nix/hnixbot.nix
+./updater/bin/update-nix-fetchgit nix/hnix-store-experiments.nix
