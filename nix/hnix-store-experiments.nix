@@ -1,11 +1,11 @@
 self: super:
 let
-  # https://github.com/expipiplus1/update-nix-fetchgit
+  # https://github.com/sorki/hnix-store-experiments
   src = super.fetchFromGitHub {
-    owner = "expipiplus1";
-    repo = "update-nix-fetchgit";
-    rev = "3a606ea48ac1a761ee48e4d3c842501af4a7c66a";
-    sha256 = "0mminxh8sqqnzkscs1jpwfrk82aimy4081xigam2brbs6kj8zhpb";
+    owner = "sorki";
+    repo = "hnix-store-experiments";
+    rev = "d513e11abc42a1be15adc4e36194b347d990f306";
+    sha256 = "14i77snzgpy83g6k6z2gmc0cq10vy4mqb3hpsmacf8lg3cm2pvwy";
   };
 
   # swap with src to build from this path
