@@ -10,9 +10,6 @@ nix-build -A update-nix-fetchgit -o updater
 # storepath
 ./updater/bin/update-nix-fetchgit nix/hnix-store.nix --rev refs/heads/storepath
 
-# poly derivation
-./updater/bin/update-nix-fetchgit nix/nix-diff.nix --rev refs/heads/poly
-
 # GHC 883 fixes and other bits
 ./updater/bin/update-nix-fetchgit nix/update-nix-fetchgit.nix --rev refs/heads/fixes
 
