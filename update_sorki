@@ -2,7 +2,7 @@
 
 set -e
 
-nix-build -A update-nix-fetchgit -o updater
+test -d updater || nix-build -A update-nix-fetchgit -o updater
 go () { ./updater/bin/update-nix-fetchgit $*; }
 
 # int(egration)
