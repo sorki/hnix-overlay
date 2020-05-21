@@ -4,8 +4,8 @@ let
   src = super.fetchFromGitHub {
     owner = "sorki";
     repo = "hnix-store";
-    rev = "ceebe2211c6ef267c7f3ee522764f0364752b188";
-    sha256 = "11z2y32n41vplh2anp830hahay6ll32qh1ccilviq9179a4z4ayv";
+    rev = "a217ec237212491b794810e627fbc50c65ad097b";
+    sha256 = "0fqx1qgg6d80v9h7v38rh28dq5a60lizasrygn28crs48bp2w0xq";
   };
 
   # swap with src to build from this path
