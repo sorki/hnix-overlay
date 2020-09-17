@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -e
+
+test -d updater || nix-build -A update-nix-fetchgit -o updater
+go () { echo -n "> $1 "; ./updater/bin/update-nix-fetchgit $1; }
+
+go nix/nix-diff.nix
+go nix/nix-derivation.nix
+go nix/nix-narinfo.nix
+go nix/hnix.nix
+go nix/hnix-store.nix
+go nix/hnixbot.nix
+go nix/hnix-store-experiments.nix
+go nix/update-nix-fetchgit.nix
+go nix/update-nix-file.nix

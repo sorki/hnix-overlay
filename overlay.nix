@@ -31,32 +31,15 @@
         buildInputs = attrs.buildInputs ++ [ super.nix super.which ];
       });
 
-      # ghc8101
-      # bounds
-      cryptohash-sha512 = super.haskell.lib.doJailbreak hsuper.cryptohash-sha512;
-      constraints-extras = super.haskell.lib.doJailbreak hsuper.constraints-extras;
-      http-media =  super.haskell.lib.doJailbreak hsuper.http-media;
+      prettyprinter = hsuper.callHackageDirect {
+        pkg = "prettyprinter";
+        ver = "1.7.0";
+        sha256 = "17byy08brwcsl5rqdhibq3pcpgx085shizb2ap6s4xy3izdia3cc"; } {};
 
-      # https://github.com/DanBurton/lens-family-th/pull/17
-      lens-family-th = hsuper.callCabal2nix "lens-family-th" (super.fetchFromGitHub {
-        owner = "sorki";
-        repo = "lens-family-th";
-        rev = "ghc8101";
-        sha256 = "0s95fv2ra5qn0z61piqwb2xbfiayga45w05j2r97ig6vrrdz23kc";
-      }) {};
-      indexed-profunctors =  super.haskell.lib.doJailbreak hsuper.indexed-profunctors;
+      data-fix = hsuper.callHackage "data-fix" "0.3.0" {};
 
-      # polysemy
-      first-class-families = super.haskell.lib.doJailbreak hsuper.first-class-families;
-      # failing "who needs Weaving even?" test
-      polysemy = super.haskell.lib.dontCheck hsuper.polysemy;
-      # https://github.com/polysemy-research/loopbreaker/pull/11
-      loopbreaker = hsuper.callCabal2nix "loopbreaker" (super.fetchFromGitHub {
-        owner = "Avi-D-coder";
-        repo = "loopbreaker";
-        rev = "810";
-        sha256 = "1vi9qv6ga41rsh54x21fjh9lgj0badd112x19b31273rvq6ivxpc";
-      }) {};
+      neat-interpolation = hsuper.callHackage "neat-interpolation" "0.5.1.1" {};
+
     });
 
   }); })
