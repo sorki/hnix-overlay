@@ -24,6 +24,7 @@ rec {
     hnix-store-remote
     hnix-store-experiments
 
+    nix-linter
     update-nix-fetchgit
     update-nix-file
 

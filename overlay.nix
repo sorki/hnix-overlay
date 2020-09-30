@@ -8,6 +8,7 @@
   (import ./nix/hnix-store.nix)
   (import ./nix/hnix-store-experiments.nix)
 
+  (import ./nix/nix-linter.nix)
   (import ./nix/update-nix-fetchgit.nix)
   (import ./nix/update-nix-file.nix)
 
