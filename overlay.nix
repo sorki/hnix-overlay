@@ -41,6 +41,9 @@
 
       neat-interpolation = hsuper.callHackage "neat-interpolation" "0.5.1.1" {};
 
+      cryptohash-sha512 = super.haskell.lib.doJailbreak hsuper.cryptohash-sha512;
+      which = super.haskell.lib.doJailbreak hsuper.which;
+
     });
 
   }); })
