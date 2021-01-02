@@ -22,6 +22,7 @@ nix-shell
 ### [update-nix-file](https://github.com/sorki/update-nix-file)
 ### [nix-derivation](https://github.com/Gabriel439/Haskell-Nix-Derivation-Library)
 ### [nix-diff](https://github.com/Gabriel439/nix-diff)
+### [nix-linter](https://github.com/Synthetica9/nix-linter/)
 ### [nix-narinfo](https://github.com/sorki/nix-narinfo)
 ### [hnix-store-experiments](https://github.com/sorki/hnix-store-experiments)
 
