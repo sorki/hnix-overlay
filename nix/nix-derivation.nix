@@ -4,8 +4,8 @@ let
   src = super.fetchFromGitHub {
     owner = "Gabriel439";
     repo = "Haskell-Nix-Derivation-Library";
-    rev = "4fb51cff1047dbbfebcceeb12d454aa6c96f09b0";
-    sha256 = "0mybs30k6axia3rgf0x2zfx6ks7rlbdh5744473qvnf542k6lg81";
+    rev = "73e2ee56bf0e388693cca1429c82e1c3984498ac";
+    sha256 = "02a33xvdy6f5syckm8djz1qhna41mfnvlbn1jcgbgqxchds5g0f0";
   };
 
   # swap with src to build from this path
