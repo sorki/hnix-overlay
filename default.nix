@@ -35,7 +35,5 @@ rec {
     ; # yeah
 
   inherit pkgs;
-
-  shell = mkShell hnix;
   inherit mkShell;
 }

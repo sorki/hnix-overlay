@@ -1,2 +1,5 @@
 { nixpkgs ? import ./nixpkgs.nix {} }:
-(import ./default.nix { inherit nixpkgs; }).shell
+let
+  hnixpkgs = (import ./default.nix { inherit nixpkgs; });
+in
+  hnixpkgs.mkShell hnixpkgs.hnix
