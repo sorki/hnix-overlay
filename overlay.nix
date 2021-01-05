@@ -37,10 +37,6 @@
         ver = "1.7.0";
         sha256 = "17byy08brwcsl5rqdhibq3pcpgx085shizb2ap6s4xy3izdia3cc"; } {};
 
-      data-fix = hsuper.callHackage "data-fix" "0.3.0" {};
-
-      neat-interpolation = hsuper.callHackage "neat-interpolation" "0.5.1.1" {};
-
       cryptohash-sha512 = super.haskell.lib.doJailbreak hsuper.cryptohash-sha512;
       which = super.haskell.lib.doJailbreak hsuper.which;
 
