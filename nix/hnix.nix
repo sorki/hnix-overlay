@@ -5,7 +5,8 @@ let
     owner = "haskell-nix";
     repo = "hnix";
     rev = "8a6ff0766cb55b4b458e2a35cd4c9c06704b0f1f";
-    sha256 = "14z8yqsrdpba828bqg4s65yh0fx87lzj4y6f72lv1691lf956i35";
+    sha256 = "1w2mmblnd00f63cz7wm9l7s5pa3lwg4y420p3x75yxczpqlwr5dz";
+    fetchSubmodules = true;
   };
 
   # swap with src to build from this path
